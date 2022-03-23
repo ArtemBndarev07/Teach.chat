@@ -1,7 +1,7 @@
-package com.example.chat.demo.chat.service.controller;
+package com.example.chat.demo.chat.ChatService.controller;
 
 
-import com.example.chat.demo.chat.service.model.ChatMessage;
+import com.example.chat.demo.chat.ChatService.model.ChatMessage;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
@@ -20,7 +20,7 @@ public class ChatController {
     @SendTo("/topic/public")
     public ChatMessage addUser(@Payload ChatMessage chatMessage,
                                SimpMessageHeaderAccessor headerAccessor) {
-        // Add username in web socket session
+
         headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
         return chatMessage;
     }

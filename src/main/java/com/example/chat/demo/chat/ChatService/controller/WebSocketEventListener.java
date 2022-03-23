@@ -1,7 +1,7 @@
-package com.example.chat.demo.chat.service.controller;
+package com.example.chat.demo.chat.ChatService.controller;
 
 
-import com.example.chat.demo.chat.service.model.ChatMessage;
+import com.example.chat.demo.chat.ChatService.model.ChatMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

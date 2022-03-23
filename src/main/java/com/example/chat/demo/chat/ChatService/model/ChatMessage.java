@@ -1,4 +1,4 @@
-package com.example.chat.demo.chat.service.model;
+package com.example.chat.demo.chat.ChatService.model;
 
 public class ChatMessage {
     private MessageType type;
